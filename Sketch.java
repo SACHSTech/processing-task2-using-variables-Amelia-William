@@ -1,36 +1,28 @@
 import processing.core.PApplet;
 
 public class Sketch extends PApplet {
-	
-	
-  /**
-   * Called once at the beginning of execution, put your size all in this method
-   */
-  public void settings() {
-	// put your size call here
-    size(400, 400);
+
+ public void settings() {
+size(500, 500);
+ }
+  
+ public void setup() { 
+   background(194, 236, 255); 
   }
 
-  /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
-   */
-  public void setup() {
-    background(210, 255, 173);
-  }
-
-  /**
-   * Called repeatedly, anything drawn to the screen goes here
-   */
   public void draw() {
-	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
+  stroke(89, 207, 106);
+  fill(89, 207, 106);
+  rect(0, height/2, width, height/2);  
+  
+  stroke(252, 239, 119);
+  fill(252, 239, 119);
+  ellipse(width/16, height/16, width/3, height/3);
+  
+  stroke(173, 112, 66);
+  fill(173, 112, 66);
+  rect(width/3, height/3, width/3, height/3);
 
-    stroke(255);
-    line(50, 125, 70, 50);  
   }
   
-  // define other methods down here.
 }
